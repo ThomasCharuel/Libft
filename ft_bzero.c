@@ -6,13 +6,13 @@
 /*   By: tcharuel <tcharuel@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/06 17:22:09 by tcharuel          #+#    #+#             */
-/*   Updated: 2023/11/06 18:14:25 by tcharuel         ###   ########.fr       */
+/*   Updated: 2023/11/06 18:16:54 by tcharuel         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-void	bzero(void *s, size_t n)
+void	ft_bzero(void *s, size_t n)
 {
 	size_t	i;
 	char	*src;
