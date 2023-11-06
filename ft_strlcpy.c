@@ -1,28 +1,29 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_memmove.c                                       :+:      :+:    :+:   */
+/*   ft_strlcpy.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: tcharuel <tcharuel@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2023/11/06 18:25:05 by tcharuel          #+#    #+#             */
-/*   Updated: 2023/11/06 19:14:37 by tcharuel         ###   ########.fr       */
+/*   Created: 2023/11/06 19:12:50 by tcharuel          #+#    #+#             */
+/*   Updated: 2023/11/06 19:35:21 by tcharuel         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-void	*ft_memmove(void *dest, const void *src, size_t n)
+size_t	ft_strlcpy(char *dst, const char *src, size_t size)
 {
-	unsigned char	*buffer;
+	size_t	i;
 
-	if (dest == src || n == 0)
-		return (dest);
-	buffer = (unsigned char *)malloc(n);
-	if (!buffer)
-		return (NULL);
-	ft_memcpy(buffer, src, n);
-	ft_memcpy(dest, buffer, n);
-	free(buffer);
-	return (dest);
+	i = 0;
+	while (i < size - 1 && src[i] != '\0')
+	{
+		dst[i] = src[i];
+		i++;
+	}
+	dst[i] = '\0';
+	while (src[i] != '\0')
+		i++;
+	return (i);
 }
