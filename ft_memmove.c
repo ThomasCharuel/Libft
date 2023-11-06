@@ -1,29 +1,28 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   libft.h                                            :+:      :+:    :+:   */
+/*   ft_memmove.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: tcharuel <tcharuel@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2023/11/02 13:33:34 by tcharuel          #+#    #+#             */
-/*   Updated: 2023/11/06 18:32:35 by tcharuel         ###   ########.fr       */
+/*   Created: 2023/11/06 18:25:05 by tcharuel          #+#    #+#             */
+/*   Updated: 2023/11/06 19:10:56 by tcharuel         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#ifndef LIBFT_H
-# define LIBFT_H
+#include "libft.h"
 
-# include <stdlib.h>
+void	*memmove(void *dest, const void *src, size_t n)
+{
+	unsigned char	*buffer;
 
-int		ft_isalpha(int c);
-int		ft_isdigit(int c);
-int		ft_isalnum(int c);
-int		ft_isascii(int c);
-int		ft_isprint(int c);
-size_t	ft_strlen(const char *s);
-void	*ft_memset(void *s, int c, size_t n);
-void	ft_bzero(void *s, size_t n);
-void	*ft_memcpy(void *dest, const void *src, size_t n);
-void	*ft_memmove(void *dest, const void *src, size_t n);
-
-#endif
+	if (dest == src || n == 0)
+		return (dest);
+	buffer = (unsigned char *)malloc(n);
+	if (!buffer)
+		return (NULL);
+	ft_memcpy(buffer, src, n);
+	ft_memcpy(dest, buffer, n);
+	free(buffer);
+	return (dest);
+}
