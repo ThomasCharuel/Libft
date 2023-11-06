@@ -6,7 +6,7 @@
 /*   By: tcharuel <tcharuel@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/02 13:33:34 by tcharuel          #+#    #+#             */
-/*   Updated: 2023/11/06 17:23:18 by tcharuel         ###   ########.fr       */
+/*   Updated: 2023/11/06 18:07:06 by tcharuel         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -22,5 +22,6 @@ int		ft_isascii(int c);
 int		ft_isprint(int c);
 size_t	ft_strlen(const char *s);
 void	*memset(void *s, int c, size_t n);
+void	bzero(void *s, size_t n);
 
 #endif
