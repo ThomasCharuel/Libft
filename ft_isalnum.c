@@ -6,7 +6,7 @@
 /*   By: tcharuel <tcharuel@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/06 16:24:50 by tcharuel          #+#    #+#             */
-/*   Updated: 2023/11/06 16:27:37 by tcharuel         ###   ########.fr       */
+/*   Updated: 2023/11/06 17:03:11 by tcharuel         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,8 +15,6 @@
 int	ft_isalnum(int c)
 {
 	if (ft_isalpha(c) || ft_isdigit(c))
-	{
 		return (1);
-	}
 	return (0);
 }
