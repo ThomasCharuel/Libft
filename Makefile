@@ -6,7 +6,7 @@
 #    By: tcharuel <tcharuel@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2023/11/02 13:33:40 by tcharuel          #+#    #+#              #
-#    Updated: 2023/11/06 16:28:16 by tcharuel         ###   ########.fr        #
+#    Updated: 2023/11/06 16:30:25 by tcharuel         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -14,7 +14,8 @@ NAME = libft.a
 
 SOURCES = ft_isalpha.c \
 	ft_isdigit.c \
-	ft_isalnum.c
+	ft_isalnum.c \
+	ft_isascii.c
 
 OBJECTS = $(SOURCES:.c=.o)
 
