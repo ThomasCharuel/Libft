@@ -6,7 +6,15 @@
 /*   By: tcharuel <tcharuel@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/02 13:33:34 by tcharuel          #+#    #+#             */
-/*   Updated: 2023/11/02 13:34:25 by tcharuel         ###   ########.fr       */
+/*   Updated: 2023/11/06 15:34:44 by tcharuel         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
+#ifndef LIBFT_H
+# define LIBFT_H
+
+# include <stdlib.h>
+
+int	ft_isalpha(int c);
+
+#endif
