@@ -1,30 +1,30 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_memchr.c                                        :+:      :+:    :+:   */
+/*   ft_strnstr.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: tcharuel <tcharuel@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2023/11/07 12:14:33 by tcharuel          #+#    #+#             */
-/*   Updated: 2023/11/07 14:05:15 by tcharuel         ###   ########.fr       */
+/*   Created: 2023/11/07 13:44:33 by tcharuel          #+#    #+#             */
+/*   Updated: 2023/11/07 14:08:30 by tcharuel         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-void	*ft_memchr(const void *s, int c, size_t n)
+char	*ft_strnstr(const char *big, const char *little, size_t len)
 {
-	unsigned char	byte;
-	const unsigned char	*buffer;
-	size_t			i;
+	size_t	i;
+	size_t	little_length;
 
-	byte = (unsigned char)c;
-	buffer = (const unsigned char *)s;
+	little_length = ft_strlen(little);
+	if (little_length == 0)
+		return ((char *)big);
 	i = 0;
-	while (i < n)
+	while (i < len && big[i] != '\0')
 	{
-		if (buffer[i] == byte)
-			return ((void *)(&buffer[i]));
+		if (ft_strncmp(&big[i], little, little_length) == 0)
+			return ((char *)&big[i]);
 		i++;
 	}
 	return (NULL);
