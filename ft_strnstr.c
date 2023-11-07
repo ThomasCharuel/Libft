@@ -6,7 +6,7 @@
 /*   By: tcharuel <tcharuel@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/07 13:44:33 by tcharuel          #+#    #+#             */
-/*   Updated: 2023/11/07 14:08:30 by tcharuel         ###   ########.fr       */
+/*   Updated: 2023/11/07 18:39:00 by tcharuel         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -23,7 +23,7 @@ char	*ft_strnstr(const char *big, const char *little, size_t len)
 	i = 0;
 	while (i < len && big[i] != '\0')
 	{
-		if (ft_strncmp(&big[i], little, little_length) == 0)
+		if (!ft_strncmp(&big[i], little, little_length - 1))
 			return ((char *)&big[i]);
 		i++;
 	}
