@@ -6,7 +6,7 @@
 /*   By: tcharuel <tcharuel@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/06 17:22:09 by tcharuel          #+#    #+#             */
-/*   Updated: 2023/11/06 18:16:54 by tcharuel         ###   ########.fr       */
+/*   Updated: 2023/11/07 18:12:10 by tcharuel         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,5 +20,5 @@ void	ft_bzero(void *s, size_t n)
 	src = (char *)s;
 	i = 0;
 	while (i < n)
-		src[i] = 0;
+		src[i++] = 0;
 }
