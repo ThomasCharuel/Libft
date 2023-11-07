@@ -6,7 +6,7 @@
 /*   By: tcharuel <tcharuel@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/07 10:23:26 by tcharuel          #+#    #+#             */
-/*   Updated: 2023/11/07 10:34:06 by tcharuel         ###   ########.fr       */
+/*   Updated: 2023/11/07 10:45:02 by tcharuel         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,15 +15,13 @@
 char	*ft_strchr(const char *s, int c)
 {
 	unsigned char	byte;
-	size_t			i;
 
 	byte = (unsigned char)c;
-	i = 0;
-	while (s[i] != '\0')
+	while (*s != '\0')
 	{
-		if (s[i] == byte)
-			return (&s[i]);
-		i++;
+		if (*s == byte)
+			return ((char *)s);
+		s++;
 	}
 	return (NULL);
 }
