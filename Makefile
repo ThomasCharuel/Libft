@@ -6,7 +6,7 @@
 #    By: tcharuel <tcharuel@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2023/11/02 13:33:40 by tcharuel          #+#    #+#              #
-#    Updated: 2023/11/07 10:46:24 by tcharuel         ###   ########.fr        #
+#    Updated: 2023/11/07 10:55:17 by tcharuel         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -27,7 +27,8 @@ SOURCES = ft_isalpha.c \
 	ft_toupper.c \
 	ft_tolower.c \
 	ft_strchr.c \
-	ft_strrchr.c
+	ft_strrchr.c \
+	ft_strncmp.c
 
 OBJECTS = $(SOURCES:.c=.o)
 
