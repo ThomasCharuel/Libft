@@ -6,7 +6,7 @@
 /*   By: tcharuel <tcharuel@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/07 12:14:33 by tcharuel          #+#    #+#             */
-/*   Updated: 2023/11/07 14:05:15 by tcharuel         ###   ########.fr       */
+/*   Updated: 2023/11/07 14:41:03 by tcharuel         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,9 +14,9 @@
 
 void	*ft_memchr(const void *s, int c, size_t n)
 {
-	unsigned char	byte;
 	const unsigned char	*buffer;
-	size_t			i;
+	unsigned char		byte;
+	size_t				i;
 
 	byte = (unsigned char)c;
 	buffer = (const unsigned char *)s;
