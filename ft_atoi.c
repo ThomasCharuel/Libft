@@ -6,7 +6,7 @@
 /*   By: tcharuel <tcharuel@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/07 14:09:21 by tcharuel          #+#    #+#             */
-/*   Updated: 2023/11/07 14:22:54 by tcharuel         ###   ########.fr       */
+/*   Updated: 2023/11/07 18:43:35 by tcharuel         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -34,10 +34,10 @@ int	ft_atoi(const char *nptr)
 	if (nptr[i] == '-' || nptr[i] == '+')
 		if (nptr[i++] == '-')
 			sign = -1;
-	while (ft_isdigit((int)nptr[i]))
+	while (ft_isdigit(nptr[i]))
 	{
 		res *= 10;
-		res += (int)nptr[i];
+		res += (nptr[i] - 48);
 		i++;
 	}
 	return (sign * res);
