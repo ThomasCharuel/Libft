@@ -6,7 +6,7 @@
 #    By: tcharuel <tcharuel@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2023/11/02 13:33:40 by tcharuel          #+#    #+#              #
-#    Updated: 2023/11/07 13:44:25 by tcharuel         ###   ########.fr        #
+#    Updated: 2023/11/07 14:10:18 by tcharuel         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -31,7 +31,8 @@ SOURCES = ft_isalpha.c \
 	ft_strncmp.c \
 	ft_memchr.c \
 	ft_memcmp.c \
-	ft_strnstr.c
+	ft_strnstr.c \
+	ft_atoi.c
 
 OBJECTS = $(SOURCES:.c=.o)
 
