@@ -6,7 +6,7 @@
 /*   By: tcharuel <tcharuel@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/07 16:49:29 by tcharuel          #+#    #+#             */
-/*   Updated: 2023/11/07 17:04:27 by tcharuel         ###   ########.fr       */
+/*   Updated: 2023/11/08 17:32:58 by tcharuel         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -27,9 +27,10 @@ static size_t	strlen_with_charset(char const *s, char const *set)
 {
 	size_t	i;
 
-	i = 0;
-	while (s[i] != '\0' && !is_charset(s[i], set))
-		i++;
+	i = ft_strlen(s);
+	while (i > 0 && is_charset(s[i - 1], set))
+		if (i > 0)
+			i--;
 	return (i);
 }
 
