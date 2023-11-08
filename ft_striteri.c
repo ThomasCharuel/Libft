@@ -6,7 +6,7 @@
 /*   By: tcharuel <tcharuel@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/08 11:42:17 by tcharuel          #+#    #+#             */
-/*   Updated: 2023/11/08 11:46:38 by tcharuel         ###   ########.fr       */
+/*   Updated: 2023/11/08 15:31:29 by tcharuel         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -26,6 +26,8 @@ void	ft_striteri(char *s, void (*f)(unsigned int, char*))
 	size_t	len;
 	size_t	i;
 
+	if (!s || !f)
+		return ;
 	len = ft_strlen(s);
 	i = 0;
 	while (i < len)
