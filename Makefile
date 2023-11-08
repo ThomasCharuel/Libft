@@ -6,7 +6,7 @@
 #    By: tcharuel <tcharuel@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2023/11/02 13:33:40 by tcharuel          #+#    #+#              #
-#    Updated: 2023/11/08 11:42:10 by tcharuel         ###   ########.fr        #
+#    Updated: 2023/11/08 11:47:27 by tcharuel         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -41,7 +41,8 @@ SOURCES = ft_isalpha.c \
 	ft_split.c \
 	ft_itoa.c \
 	ft_strmapi.c \
-	ft_striteri.c
+	ft_striteri.c \
+	ft_putchar_fd.c
 
 OBJECTS = $(SOURCES:.c=.o)
 
