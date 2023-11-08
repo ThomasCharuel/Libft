@@ -6,7 +6,7 @@
 /*   By: tcharuel <tcharuel@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/08 11:50:36 by tcharuel          #+#    #+#             */
-/*   Updated: 2023/11/08 11:56:30 by tcharuel         ###   ########.fr       */
+/*   Updated: 2023/11/08 15:34:45 by tcharuel         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -24,6 +24,8 @@ void	ft_putstr_fd(char *s, int fd)
 	size_t	len;
 	size_t	i;
 
+	if (!s)
+		return ;
 	len = ft_strlen(s);
 	i = 0;
 	while (i < len)
