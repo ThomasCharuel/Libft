@@ -6,7 +6,7 @@
 #    By: tcharuel <tcharuel@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2023/11/02 13:33:40 by tcharuel          #+#    #+#              #
-#    Updated: 2023/11/08 12:01:09 by tcharuel         ###   ########.fr        #
+#    Updated: 2023/11/08 13:12:57 by tcharuel         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -47,7 +47,11 @@ SOURCES = ft_isalpha.c \
 	ft_putendl_fd.c \
 	ft_putnbr_fd.c
 
+SOURCES_BONUS = ft_lstnew.c
+
 OBJECTS = $(SOURCES:.c=.o)
+
+OBJECTS_BONUS = $(SOURCES_BONUS:.c=.o)
 
 CFLAGS = -Wall -Wextra -Werror
 
@@ -57,14 +61,17 @@ CFLAGS = -Wall -Wextra -Werror
 $(NAME): $(OBJECTS)
 	ar rcs $(NAME) $(OBJECTS)
 
+bonus: $(OBJECTS) $(OBJECTS_BONUS)
+	ar rcs $(NAME) $(OBJECTS) $(OBJECTS_BONUS)
+
 all: $(NAME)
 
 clean:
-	rm -f $(OBJECTS)
+	rm -f $(OBJECTS) $(OBJECTS_BONUS)
 
 fclean: clean
 	rm -f $(NAME)
 
 re: fclean all
 
-.PHONY: $(NAME) all clean fclean re
+.PHONY: $(NAME) bonus all clean fclean re
