@@ -6,7 +6,7 @@
 /*   By: tcharuel <tcharuel@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/06 18:15:29 by tcharuel          #+#    #+#             */
-/*   Updated: 2023/11/06 18:22:55 by tcharuel         ###   ########.fr       */
+/*   Updated: 2023/11/08 14:55:12 by tcharuel         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,6 +18,8 @@ void	*ft_memcpy(void *dest, const void *src, size_t n)
 	unsigned char	*buffer_src;
 	size_t			i;
 
+	if (!dest && !src)
+		return (NULL);
 	buffer_dest = (unsigned char *)dest;
 	buffer_src = (unsigned char *)src;
 	i = 0;
