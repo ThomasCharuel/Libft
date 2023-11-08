@@ -6,7 +6,7 @@
 /*   By: tcharuel <tcharuel@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/08 13:40:40 by tcharuel          #+#    #+#             */
-/*   Updated: 2023/11/08 13:50:01 by tcharuel         ###   ########.fr       */
+/*   Updated: 2023/11/08 15:09:15 by tcharuel         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -24,6 +24,8 @@
  */
 void	ft_lstdelone(t_list *lst, void (*del)(void*))
 {
+	if (!lst || !del)
+		return ;
 	(*del)(lst->content);
 	free(lst);
 }
