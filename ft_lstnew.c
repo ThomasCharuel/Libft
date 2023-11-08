@@ -6,7 +6,7 @@
 /*   By: tcharuel <tcharuel@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/08 13:13:44 by tcharuel          #+#    #+#             */
-/*   Updated: 2023/11/08 13:18:32 by tcharuel         ###   ########.fr       */
+/*   Updated: 2023/11/08 14:15:14 by tcharuel         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,6 +21,7 @@
  * @param content: The content to create the node with.
  *
  * @return The new node.
+ * @retval NULL if the allocation fails.
  */
 t_list	*ft_lstnew(void *content)
 {

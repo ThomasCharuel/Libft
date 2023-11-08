@@ -6,7 +6,7 @@
 #    By: tcharuel <tcharuel@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2023/11/02 13:33:40 by tcharuel          #+#    #+#              #
-#    Updated: 2023/11/08 13:58:01 by tcharuel         ###   ########.fr        #
+#    Updated: 2023/11/08 14:01:40 by tcharuel         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -54,7 +54,8 @@ SOURCES_BONUS = ft_lstnew.c \
 	ft_lstadd_back.c \
 	ft_lstdelone.c \
 	ft_lstclear.c \
-	ft_lstiter.c
+	ft_lstiter.c \
+	ft_lstmap.c
 
 OBJECTS = $(SOURCES:.c=.o)
 
