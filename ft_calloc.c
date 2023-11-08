@@ -6,7 +6,7 @@
 /*   By: tcharuel <tcharuel@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/07 14:25:07 by tcharuel          #+#    #+#             */
-/*   Updated: 2023/11/08 09:54:21 by tcharuel         ###   ########.fr       */
+/*   Updated: 2023/11/08 10:56:37 by tcharuel         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -22,7 +22,7 @@ void	*ft_calloc(size_t nmemb, size_t size)
 		return (NULL);
 	buffer = malloc(bytes);
 	if (!buffer || !nmemb || !size)
-		return buffer;
+		return (buffer);
 	ft_bzero(buffer, bytes);
 	return (buffer);
 }

@@ -6,12 +6,11 @@
 /*   By: tcharuel <tcharuel@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/07 14:55:54 by tcharuel          #+#    #+#             */
-/*   Updated: 2023/11/08 10:23:01 by tcharuel         ###   ########.fr       */
+/*   Updated: 2023/11/08 10:34:21 by tcharuel         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
-#include <stdio.h>
 
 /**
  * @brief Allocates and returns a substring from the input string.

@@ -6,13 +6,12 @@
 /*   By: tcharuel <tcharuel@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/07 13:38:32 by tcharuel          #+#    #+#             */
-/*   Updated: 2023/11/07 19:41:31 by tcharuel         ###   ########.fr       */
+/*   Updated: 2023/11/08 10:34:17 by tcharuel         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-#include <stdio.h>
 int	ft_memcmp(const void *s1, const void *s2, size_t n)
 {
 	unsigned char	*buffer1;
