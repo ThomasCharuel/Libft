@@ -6,7 +6,7 @@
 /*   By: tcharuel <tcharuel@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/06 19:36:51 by tcharuel          #+#    #+#             */
-/*   Updated: 2023/11/06 19:47:50 by tcharuel         ###   ########.fr       */
+/*   Updated: 2023/11/08 17:47:04 by tcharuel         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,6 +18,8 @@ size_t	ft_strlcat(char *dst, const char *src, size_t size)
 	size_t	dest_len;
 	size_t	i;
 
+	if (!size)
+		return (ft_strlen(src));
 	dest_len = ft_strlen(dst);
 	if (size <= dest_len)
 		return (size + ft_strlen(src));
