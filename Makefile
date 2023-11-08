@@ -6,7 +6,7 @@
 #    By: tcharuel <tcharuel@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2023/11/02 13:33:40 by tcharuel          #+#    #+#              #
-#    Updated: 2023/11/08 13:19:24 by tcharuel         ###   ########.fr        #
+#    Updated: 2023/11/08 13:31:21 by tcharuel         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -48,7 +48,8 @@ SOURCES = ft_isalpha.c \
 	ft_putnbr_fd.c
 
 SOURCES_BONUS = ft_lstnew.c \
-	ft_lstadd_front.c
+	ft_lstadd_front.c \
+	ft_lstsize.c
 
 OBJECTS = $(SOURCES:.c=.o)
 
