@@ -6,7 +6,7 @@
 /*   By: tcharuel <tcharuel@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/07 17:05:30 by tcharuel          #+#    #+#             */
-/*   Updated: 2023/11/07 17:56:40 by tcharuel         ###   ########.fr       */
+/*   Updated: 2023/11/08 15:36:30 by tcharuel         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -86,6 +86,8 @@ char	**ft_split(char const *s, char c)
 	size_t	strs_count;
 	int		i;
 
+	if (!s)
+		return (NULL);
 	strs_count = get_strs_count(s, c);
 	strs = (char **)malloc((strs_count + 1) * sizeof(char *));
 	if (!strs)
