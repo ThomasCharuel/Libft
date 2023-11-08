@@ -6,7 +6,7 @@
 /*   By: tcharuel <tcharuel@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/07 14:55:54 by tcharuel          #+#    #+#             */
-/*   Updated: 2023/11/08 10:34:21 by tcharuel         ###   ########.fr       */
+/*   Updated: 2023/11/08 15:38:06 by tcharuel         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -32,7 +32,7 @@ char	*ft_substr(char const *s, unsigned int start, size_t len)
 	size_t	substr_len;
 	size_t	i;
 
-	if (start > ft_strlen(s))
+	if (!s || start > ft_strlen(s))
 		substr_len = 0;
 	else
 	{
