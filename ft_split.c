@@ -6,7 +6,7 @@
 /*   By: tcharuel <tcharuel@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/07 17:05:30 by tcharuel          #+#    #+#             */
-/*   Updated: 2023/11/08 15:36:30 by tcharuel         ###   ########.fr       */
+/*   Updated: 2023/11/13 14:25:37 by tcharuel         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -100,6 +100,7 @@ char	**ft_split(char const *s, char c)
 		{
 			while (--i >= 0)
 				free(strs[i]);
+			free(strs);
 			return (NULL);
 		}
 		i++;
